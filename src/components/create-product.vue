@@ -11,8 +11,12 @@
         <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
+    <div>
+        <label class="form-label" for="customFile">Subir imagen</label>
+        <input type="file" class="form-control" id="customFile" />
+    </div>
     <div class="mb-3">
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="stock">
     </div>
 </div>
 </template>
