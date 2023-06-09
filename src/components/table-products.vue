@@ -9,20 +9,33 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr v-for="product in products" v-bind:key="product.id">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <!-- Hardcode -->
+      <td>1</td>
+      <td>{{ product.price }}</td>
     </tr>
   </tbody>
 </table>
 </template>
 
 <script>
-export default {
+import datos from '../assets/hardcode-data.json'
 
+export default {
+    name: 'TableProducts',
+
+    computed: {
+    products() {
+        return datos.map((product) => {
+            return product;
+        })
+    }
 }
+}
+
+
 </script>
 
 <style>

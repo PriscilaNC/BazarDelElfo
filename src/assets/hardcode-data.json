@@ -1,5 +1,4 @@
-{
-    "productos": [
+[
         {
             "id": 1,
             "name": "Set dados azul",
@@ -24,5 +23,4 @@
             "images": ["https://dementegames.cl/6606-large_default/set-dados-de-rol-verde-negro-dorado.jpg"],
             "stock": 999
         }
-    ]
-}
+]
