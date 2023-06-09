@@ -1,7 +1,7 @@
 <template>
-  <CarouselComponent/>
   <HeaderComponent/>
   <NavBar/>
+  <CarouselComponent/>
 </template>
 
 <script>
