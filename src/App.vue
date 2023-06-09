@@ -3,18 +3,22 @@
   <NavBar/>
   <CarouselRecomended/>
 
+  <HeaderComponent/>
+  <NavBar/>
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/nav-bar.vue';
-import CarouselRecomended from '@/components/carrousel-recomended.vue';
+import CarouselComponent from '@/components/carrousel-component.vue';
+import HeaderComponent from '@/components/header-component.vue';
 
 export default {
   name: 'App',
-  components: { 
-    NavBar, CarouselRecomended
-  }
+  components: {
+    HeaderComponent,
+    NavBar, CarouselComponent
+}
 }
 </script>
 
