@@ -5,7 +5,7 @@
 </div>
 </template>
 
-<script>
+<script>  
 import headerComponent from "./components/header-component.vue"
 import NavBar from "./components/nav-bar.vue";
 
