@@ -1,17 +1,32 @@
 <template>
-  <div >
-    <Cardproduct v-for="product in products" v-bind:key="product.id"/>
+  <div v-for="product in products" v-bind:key="product.id">
+    <CardProduct/>
   </div>
 </template>
 
 <script>
-import {products} from '../components/card-producto.vue';
+//import {products} from '../components/card-producto.vue';
 import CardProduct from '../components/card-producto.vue';
 
 export default {
   name: 'MarketPlace',
-  components: { CardProduct}
-}
+  components: { CardProduct},
+  data() {
+    return {
+      product: Object,
+
+    };
+  },
+  mounted() {
+    this.verProducto();
+  },
+  methods: {
+    async verProducto() {
+        
+    },
+  },
+};
+
 </script>
 
 <style>

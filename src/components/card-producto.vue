@@ -1,6 +1,6 @@
 <template>
-  <div class="card" style="width: 18rem;" v-if="product">
-  <!-- <img v-src="{{ product.images[0]}}" class="card-img-top" alt="..."> -->
+  <div class="card" style="width: 18rem;" v-if="product" v-bind:key="product.id"> 
+ <!-- <img v-bind:src={{ product.images}} class="card-img-top" alt="..."> -->
   <div class="card-body">
     <h5 class="card-title">{{ product.name }}</h5>
     <p class="card-text">{{ product.price }}</p>
@@ -10,7 +10,7 @@
 
 <script>
 import datos from '../assets/json/hardcode-data.json'
-export default {
+export default { 
 
     name: 'TableProducts',
 
