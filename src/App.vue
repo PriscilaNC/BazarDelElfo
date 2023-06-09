@@ -1,8 +1,7 @@
 <template>
 <div>
   <NavBar/>
-  <CarouselRecomended/>
-
+<CarouselComponent/>
   <HeaderComponent/>
   <NavBar/>
 </div>
@@ -10,14 +9,14 @@
 
 <script>
 import NavBar from '@/components/nav-bar.vue';
-import CarouselComponent from '@/components/carrousel-component.vue';
+import CarouselComponent from '@/components/carousel-component.vue';
 import HeaderComponent from '@/components/header-component.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    NavBar, CarouselComponent
+    NavBar,CarouselComponent
 }
 }
 </script>
