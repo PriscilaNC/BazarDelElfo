@@ -1,6 +1,6 @@
 <template>
-  <div>
-    v-if
+  <div v-if="product">
+    <Cardproduct/>
   </div>
 </template>
 
