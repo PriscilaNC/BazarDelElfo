@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link class="nav-link active"  to="/landing_page">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dados</a>
+            <router-link class="nav-link active"  to="/marketplace">Marketplace</router-link>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>

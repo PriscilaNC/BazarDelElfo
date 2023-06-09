@@ -6,9 +6,9 @@
       </div>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary me-2">Sign-up</button>
-        <button type="button" class="btn btn-primary" style="margin-right: 15px;">Carrito</button>
+        <router-link type="button" class="btn btn-outline-primary me-2" to="/login_page">Login</router-link>
+        <router-link type="button" class="btn btn-primary me-2" to="/register_page">Sign-up</router-link>
+        <router-link type="button" class="btn btn-primary me-2" style="margin-right: 15px;" to="/register_page" >Carrito</router-link>
       </div>
     </header>
     </div>
