@@ -1,20 +1,23 @@
 <template>
 <div>
-  <header-component/>
+  <NavBar/>
+  <CarouselRecomended/>
+
+  <HeaderComponent/>
   <NavBar/>
 </div>
 </template>
 
-<script>  
-import headerComponent from "./components/header-component.vue"
-import NavBar from "./components/nav-bar.vue";
-
+<script>
+import NavBar from '@/components/nav-bar.vue';
+import CarouselComponent from '@/components/carrousel-component.vue';
+import HeaderComponent from '@/components/header-component.vue';
 
 export default {
   name: 'App',
   components: {
-    headerComponent,
-    NavBar
+    HeaderComponent,
+    NavBar, CarouselComponent
 }
 }
 </script>
