@@ -4,7 +4,7 @@
             "name": "Set dados azul",
             "price": 3000,
             "description": "Set de dados de rol de color azul",
-            "images": "../assets/img/products-img/id1_1",
+            "images": ["../assets/img/products-img/id1_1.jpg"],
             "stock": 99
         },
         {
@@ -12,7 +12,7 @@
             "name": "Set dados rojo",
             "price": 5000,
             "description": "Set de dados de rol de color rojo",
-            "images": "../assets/img/products-img/id2_1",
+            "images": ["../assets/img/products-img/id2_1.jpg"],
             "stock": 99
         },
         {
@@ -20,7 +20,7 @@
             "name": "Set dados verde",
             "price": 10000,
             "description": "Set de dados de rol de color verde",
-            "images": "../assets/img/products-img/id3_1",
+            "images": ["../assets/img/products-img/id3_1.jpg"],
             "stock": 99
         }
 ]

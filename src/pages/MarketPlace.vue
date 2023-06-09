@@ -1,17 +1,37 @@
 <template>
-  <div >
-    <Cardproduct v-for="product in products" v-bind:key="product.id"/>
+  <HeaderComponent/>
+  <NavBar/>
+  <div v-for="product in products" v-bind:key="product.id">
+    <CardProduct :name="product.name" :price="product.price" :images="product.images"/>
   </div>
 </template>
 
 <script>
-import {products} from '../components/card-producto.vue';
+import datos from '../assets/json/hardcode-data.json'
 import CardProduct from '../components/card-producto.vue';
 
 export default {
   name: 'MarketPlace',
-  components: { CardProduct}
-}
+  components: { CardProduct, HeaderComponent, NavBar},
+  data() {
+    return {
+      products:[],
+
+    };
+  },
+  mounted() {
+    this.verProducto();
+  },
+  methods: {
+   verProducto() {
+      
+        this.products = datos.map((product) => {
+            return product;
+        })
+      }
+  },
+};
+
 </script>
 
 <style>
