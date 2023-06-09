@@ -1,5 +1,5 @@
 <template>
-  <table class="table">
+  <table class="table p-3 m-auto" style="width: auto;">
   <thead>
     <tr>
       <th scope="col">Producto</th>
