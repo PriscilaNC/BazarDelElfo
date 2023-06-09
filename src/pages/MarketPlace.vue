@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    v-if
+  </div>
 </template>
 
 <script>

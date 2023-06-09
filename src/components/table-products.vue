@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import datos from '../assets/hardcode-data.json'
+import datos from '../assets/json/hardcode-data.json'
 
 export default {
     name: 'TableProducts',
