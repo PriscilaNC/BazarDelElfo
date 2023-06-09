@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
       <div class="col-md-3 mb-2 mb-md-0">
           <img src="..\assets\El_Bazar_del_Elfo_logo.png" style="height: 80px;">
       </div>
