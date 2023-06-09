@@ -13,6 +13,11 @@ import datos from '../assets/json/hardcode-data.json'
 export default { 
 
     name: 'TableProducts',
+    props:{
+     images:[],
+     name:"",
+     price:0
+    },
 
     computed: {
     products() {
