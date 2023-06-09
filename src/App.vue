@@ -1,16 +1,19 @@
 <template>
 <div>
 <NavBar/>
+<CarouselRecomended/>
+
 </div>
 </template>
 
 <script>
 import NavBar from '@/components/nav-bar.vue';
+import CarouselRecomended from '@/components/carrousel-recomended.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    NavBar, CarouselRecomended
   }
 }
 </script>
