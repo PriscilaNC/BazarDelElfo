@@ -2,12 +2,12 @@
   <HeaderComponent/>
   <NavBar/>
   <div v-for="product in products" v-bind:key="product.id">
-    <CardProduct/>
+    <CardProduct :name="product.name" :price="product.price" :images="product.images"/>
   </div>
 </template>
 
 <script>
-//import {products} from '../components/card-producto.vue';
+import datos from '../assets/json/hardcode-data.json'
 import CardProduct from '../components/card-producto.vue';
 import HeaderComponent from '@/components/header-component.vue';
 import NavBar from '@/components/nav-bar.vue';
@@ -17,7 +17,7 @@ export default {
   components: { CardProduct, HeaderComponent, NavBar},
   data() {
     return {
-      product: Object,
+      products:[],
 
     };
   },
@@ -25,9 +25,12 @@ export default {
     this.verProducto();
   },
   methods: {
-    async verProducto() {
-        
-    },
+   verProducto() {
+      
+        this.products = datos.map((product) => {
+            return product;
+        })
+      }
   },
 };
 
