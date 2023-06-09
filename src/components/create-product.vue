@@ -8,15 +8,13 @@
         <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
     </div>
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descripcion"></textarea>
     </div>
     <div>
-        <label class="form-label" for="customFile">Subir imagen</label>
-        <input type="file" class="form-control" id="customFile" />
+        <input type="file" class="form-control" id="customFile" placeholder="Subir imagen"/>
     </div>
     <div class="mb-3">
-        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="stock">
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Stock">
     </div>
 </div>
 </template>
