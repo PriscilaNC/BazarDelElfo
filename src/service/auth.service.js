@@ -1,35 +1,7 @@
-const BASE_URL = "http//:localhost:3000";
-import { getToken, removeToken, setToken } from "./helpers";
+import axios from "axios";
+import { getToken, removeToken, setToken } from "./helpers.js";
 
-export async function fetchUserData() {
-    try {
-      const response = await axios.get(`${BASE_URL}/users`);
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      throw error;
-    }
-  }
-
-  export async function fetchProductsData() {
-    try {
-      const response = await axios.get(`${BASE_URL}/products`);
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      throw error;
-    }
-  }
-
-  export async function fetchAuthData() {
-    try {
-      const response = await axios.get(`${BASE_URL}/auth`);
-      return response.data;
-    } catch (error) {
-      console.error(error);
-      throw error;
-    }
-  }
+const BASE_URL = "http://localhost:3000/auth";
 
 const axiosInstance = axios.create({ baseURL: BASE_URL });
 
@@ -42,7 +14,7 @@ if (token) {
 
 export function login({ email, password }) {
 	return axiosInstance
-		.post(`${BASE_URL}/auth/login`, { email, password })
+		.post(`${BASE_URL}/login`, { email, password })
 		.then((response) => response.data)
 		.catch((error) => ({
 			error: true,
@@ -51,9 +23,9 @@ export function login({ email, password }) {
 		}));
 }
 
-export function register({ email, password, name, rut }) {
+export function register({ email, password, name, last_name }) {
 	return axiosInstance
-		.post(`${BASE_URL}/auth/register`, { email, password, name, last_name })
+		.post(`${BASE_URL}/register`, { email, password, name, last_name })
 		.then((response) => response.data)
 		.catch((error) => ({
 			error: true,
@@ -64,7 +36,7 @@ export function register({ email, password, name, rut }) {
 
 export function getMe() {
 	return axiosInstance
-		.get(`${BASE_URL}/auth/currentUser`)
+		.get(`${BASE_URL}/currentUser`)
 		.then((response) => response.data)
 		.catch((error) => {
 			console.log(error);

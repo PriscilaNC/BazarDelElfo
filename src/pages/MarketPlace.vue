@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import datos from '../assets/json/hardcode-data.json'
+import { fetchProductsData } from '../service/product.service.js'
 import CardProduct from '../components/card-producto.vue';
 import HeaderComponent from '../components/header-component.vue';
   import NavBar from '../components/nav-bar.vue';
@@ -22,16 +22,19 @@ export default {
     };
   },
   mounted() {
-    this.verProducto();
+    this.fetchDataFromAPI();
   },
   methods: {
-   verProducto() {
-      
-        this.products = datos.map((product) => {
-            return product;
-        })
+      async fetchDataFromAPI() {
+      try {
+        const response = await fetchProductsData();
+        this.products = response
+        console.log(response)
+      } catch (error) {
+        console.error(error);
       }
-  },
+    },
+  }
 };
 
 </script>
