@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AdminPage from './pages/AdminPage';
 import ShoppingCart from './pages/ShoppingCartPage';
+import GananciasPage from './pages/GananciasPage';
 
 const routes = [
 
@@ -46,6 +47,11 @@ const routes = [
     name: 'shopping_cart',
     path: '/shopping_cart',
     component: ShoppingCart
+  },
+  {
+    name: 'ganancias',
+    path: '/ganancias',
+    component: GananciasPage
   }
  
 ];
