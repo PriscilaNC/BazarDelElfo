@@ -4,6 +4,7 @@
   <div class="card-body">
     <h5 class="card-title">{{ name }}</h5>
     <p class="card-text">{{ price }}</p>
+    <a class="btn btn-primary" href="#">Añadir al carro</a>
   </div>
 </div>
 </template>
