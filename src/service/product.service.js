@@ -15,4 +15,13 @@ export async function fetchProductsData() {
     }
   }
 
+  export async function createProduct(product) {
+    try {
+      return await axios.post(`${BASE_URL}/products`, product);
+    } catch (error) {
+      console.error(error);
+      throw error;
+    }
+  }
+
 export { axiosInstance };

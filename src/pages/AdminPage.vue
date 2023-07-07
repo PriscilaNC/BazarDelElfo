@@ -1,24 +1,34 @@
 <template>
 <div>
-    <SideMenu/>
-    <TableProducts/>
-    <CreateProduct/>
+  <Ganancias/>
+  <CreateProduct/>
 </div>
 </template>
 
 <script>
-import TableProducts from '@/components/table-products.vue'
-import SideMenu from '@/components/side-menu.vue'
+import Ganancias from '@/components/table-ganacias.vue'
 import CreateProduct from '@/components/create-product.vue'
 
 export default {
   name: 'AdminPage',
   components: {
-    TableProducts,
-    SideMenu,
+    Ganancias,
     CreateProduct
+  },
+  data() {
+    return {
+      product: {
+        name: '',
+        price: 0,
+        description: '',
+        images: [],
+        stock: 0
+
+      }
+    }
   }
-}
+};
+
 </script>
 
 <style>
