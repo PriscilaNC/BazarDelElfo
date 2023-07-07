@@ -7,6 +7,7 @@ import ProductDetail from './pages/ProductDetail';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AdminPage from './pages/AdminPage';
+import ShoppingCart from './pages/ShoppingCartPage';
 
 const routes = [
 
@@ -40,6 +41,11 @@ const routes = [
     name: 'admin_page',
     path: '/admin_page',
     component: AdminPage
+  },
+  {
+    name: 'shopping_cart',
+    path: '/shopping_cart',
+    component: ShoppingCart
   }
  
 ];

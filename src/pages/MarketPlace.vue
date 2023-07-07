@@ -9,6 +9,8 @@
 <script>
 import datos from '../assets/json/hardcode-data.json'
 import CardProduct from '../components/card-producto.vue';
+import HeaderComponent from '../components/header-component.vue';
+  import NavBar from '../components/nav-bar.vue';
 
 export default {
   name: 'MarketPlace',

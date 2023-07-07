@@ -1,0 +1,45 @@
+<template>
+        <div class="card rounded-3 mb-4">
+          <div class="card-body p-4">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-md-2 col-lg-2 col-xl-2">
+                <img v-bind:src=images[0]
+                  class="img-fluid rounded-3">
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-3">
+                <p class="lead fw-normal mb-2">{{ name }}</p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                <h5 class="mb-0">{{ price }}</h5>
+              </div>
+              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</template>
+  
+<script>
+  
+  export default { 
+  
+      name: 'CardShoppingCart',
+      props:{
+       images:[],
+       name:{type:String},
+       price:{type:Number}
+      },
+  }
+
+  
+  
+</script>
+  
+<style>
+  
+</style>
